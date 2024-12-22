@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chemistry Club Plan</title>
-    <link rel="icon" href="./logo.png" style="border-radius: 50%;" type="image/png">
+    <title>October Chemistry Club</title>
+    <link rel="icon" href="./icon.jpg" style="border-radius: 50%;" type="image/jpg">
     <style>
         /* Theme CSS */
         * {
@@ -81,72 +81,77 @@
         nav a:hover {
             color: #fff;
         }
-        .intro-section {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 8rem auto 3rem;
-            padding: 2rem;
+
+        /* About Section */
+        .about-section {
+            padding: 3rem;
             background-color: #1b2838;
             border-radius: 10px;
+            margin: 8rem auto 3rem;
+            width: 90%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            margin-top: 10rem;
+            text-align: center;
         }
-        .intro-section img {
+        .about-section h2 {
+            font-size: 2rem;
+            color: #ffda79;
+            margin-bottom: 1rem;
+            border-bottom: 4px solid #ffda79;
+            display: inline-block;
+        }
+        .about-section p {
+            font-size: 1.2rem;
+            color: #ffda79;
+        }
+
+        /* Management Board Section */
+        .management-board {
+            padding: 3rem;
+            background-color: #1b2838;
+            border-radius: 10px;
+            margin: 3rem auto;
+            width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        .management-board h2 {
+            font-size: 2rem;
+            color: #ffda79;
+            margin-bottom: 2rem;
+            border-bottom: 4px solid #ffda79;
+            display: inline-block;
+        }
+        .board-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .board-member {
+            text-align: center;
+            flex: 1 1 300px;
+            background-color: #203a43;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .board-member img {
             height: 150px;
             width: 150px;
             border-radius: 50%;
-            border: 5px solid #ffda79;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-        .intro-section p {
-            flex: 1;
-            margin-left: 2rem;
-            font-size: 1.2rem;
-            color: #ffda79;
-            text-align: justify;
-        }
-        .container {
-            width: 90%;
-            margin: auto;
-        }
-        .section {
-            margin: 3rem 0;
-            padding: 2rem;
-            background-color: #1b2838;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-        h2 {
-            font-size: 1.75rem;
-            color: #ffda79;
-            border-bottom: 4px solid #ffda79;
-            display: inline-block;
             margin-bottom: 1rem;
+            border: 3px solid #ffda79;
         }
-        ul {
-            margin: 1rem 0;
-            padding-left: 1.5rem;
-        }
-        ul li {
-            margin-bottom: 0.5rem;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem 0;
-            background-color: #1b2838;
-            color: #fff;
-            text-align: left;
-        }
-        table th, table td {
-            border: 1px solid #2c5364;
-            padding: 0.8rem;
-        }
-        table th {
-            background-color: #203a43;
+        .board-member h3 {
+            font-size: 1.5rem;
             color: #ffda79;
         }
+        .board-member p {
+            font-size: 1rem;
+            color: #ffda79;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 1.5rem;
@@ -154,42 +159,11 @@
             color: #ffda79;
             margin-top: 3rem;
         }
+
         @media (max-width: 768px) {
-            /* Ensure logo and title are side by side */
-            .header-top {
-                flex-direction: row; /* Arrange logo and text side by side */
-                align-items: center; /* Align items vertically */
-                justify-content: center; /* Center them horizontally */
-            }
-            .header-top img {
-                margin-right: 0.5rem; /* Add spacing between the logo and text */
-            }
-            .header-top h1 {
-                font-size: 1.2rem; /* Adjust font size for smaller screens */
-            }
-
-            /* Ensure navigation links are side by side */
-            nav {
-                flex-direction: row; /* Display links horizontally */
-                justify-content: center; /* Center align the links */
-                gap: 0.8rem; /* Add spacing between links */
-            }
-            nav a {
-                font-size: 0.9rem; /* Adjust font size for smaller screens */
-                padding: 0.3rem 0.8rem; /* Adjust padding for compact look */
-            }
-
-            /* Intro section changes */
-            .intro-section {
-                flex-direction: column; /* Stack content vertically */
-                text-align: center; /* Center-align text */
-            }
-            .intro-section img {
-                margin-bottom: 1rem; /* Add spacing below the image */
-                margin-left: 0; /* Reset left margin */
-            }
-            .intro-section p {
-                margin-left: 0; /* Reset left margin for text */
+            .board-members {
+                flex-direction: column;
+                gap: 1rem;
             }
         }
     </style>
@@ -201,119 +175,38 @@
             <h1>October Chemistry Club</h1>
         </div>
         <nav>
-            <a href="Index.html">Home</a>
-            <a href="Index.html">2025 Plan</a>
+            <a href="index.html">Home</a>
+            <a href="./Plan 2025.html">2025 Plan</a>
         </nav>
     </header>
 
-    <div class="intro-section">
-        <img src="./icon.jpg" alt="Club Logo">
-        <p>The Chemistry Club brings together students passionate about exploring the wonders of chemistry through experiments, research, and collaboration. Join us to ignite your curiosity and dive into the fascinating world of science.</p>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>The Chemistry Club is a dynamic community of students passionate about exploring the fascinating world of chemistry. We aim to inspire curiosity, foster collaboration, and encourage innovative research and experiments. Join us to embark on an exciting scientific journey together!</p>
+    </section>
 
-    <div class="container">
-        <section id="admission" class="section">
-            <h2>Admission</h2>
-            <p>Admission details go here as per the Notion content.</p>
-        </section>
-
-        <section id="mentors" class="section">
-            <h2>Mentors Selection</h2>
-            <p>Mentor selection details go here as per the Notion content.</p>
-        </section>
-
-        <section id="sessions" class="section">
-            <h2>The Sessions</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Session</th>
-                        <th>Topic</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Session 1</td>
-                        <td>Introduction</td>
-                        <td>An introductory session to kick off the club activities.</td>
-                    </tr>
-                    <tr>
-                        <td>Session 2</td>
-                        <td>Advanced Chemistry</td>
-                        <td>Dive into advanced topics with hands-on experiments.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="scoring" class="section">
-            <h2>Scoring System</h2>
-            <p>Scoring details go here as per the Notion content.</p>
-        </section>
-
-        <section id="project" class="section">
-            <h2>The Final Project</h2>
-            <p>Details about the final project go here as per the Notion content.</p>
-        </section>
-
-        <section id="funding" class="section">
-            <h2>Funding Plan</h2>
-            <p>Funding plan details go here as per the Notion content.</p>
-        </section>
-
-        <section id="events" class="section">
-            <h2>Events</h2>
-            <p>Details about events go here as per the Notion content.</p>
-        </section>
-
-        <section id="website" class="section">
-            <h2>Club Website</h2>
-            <p>Details about the club website go here as per the Notion content.</p>
-        </section>
-
-        <section id="echo" class="section">
-            <h2>EChO</h2>
-            <p>Details about EChO go here as per the Notion content.</p>
-        </section>
-
-        <section id="forensic" class="section">
-            <h2>Forensic Chemistry</h2>
-            <p>Details about forensic chemistry go here as per the Notion content.</p>
-        </section>
-
-        <section id="community" class="section">
-            <h2>Improving the Community</h2>
-            <p>Details about improving the community go here as per the Notion content.</p>
-        </section>
-
-        <section id="field-trips" class="section">
-            <h2>Field Trips</h2>
-            <p>Details about field trips go here as per the Notion content.</p>
-        </section>
-
-        <section id="physics" class="section">
-            <h2>Physics Club Connection</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Topic</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Solar Cell Design</td>
-                        <td>Collaborative research on designing and analyzing solar cells.</td>
-                    </tr>
-                    <tr>
-                        <td>Physics-Chemistry Crossover</td>
-                        <td>Joint sessions exploring topics bridging physics and chemistry.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </div>
+    <!-- Management Board Section -->
+    <section id="management" class="management-board">
+        <h2>Management Board</h2>
+        <div class="board-members">
+            <div class="board-member">
+                <img src="./Ibrahim Walid.jpg" alt="President">
+                <h3>Ibrahim Walid</h3>
+                <p>President of the Chemistry Club</p>
+            </div>
+            <div class="board-member">
+                <img src="./vp.jpg" alt="Vice President">
+                <h3>Waiting.....</h3>
+                <p>Vice President of the Chemistry Club</p>
+            </div>
+            <div class="board-member">
+                <img src="./secretary.jpg" alt="Vice President">
+                <h3>Waiting.....</h3>
+                <p>Vice President of the Chemistry Club</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Chemistry Club. All Rights Reserved.</p>
@@ -328,16 +221,6 @@
             } else {
                 header.classList.remove('shrink');
             }
-        });
-        // Smooth Scrolling
-        document.querySelectorAll('header nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                document.getElementById(targetId).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
         });
     </script>
 </body>
